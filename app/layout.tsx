@@ -1,4 +1,5 @@
 import Header from "@/src/components/Header";
+import ActiveSectionContextProvider from "@/src/context/active-section-context";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -20,9 +21,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <body
-        className={`${geistMono.variable} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36`}
+        className={`${geistMono.variable} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36
+          h-[5000rem]`}
       >
         <div
           className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem]
@@ -33,9 +35,10 @@ export default function RootLayout({
             rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem]
             xl:left-[-15rem] 2xl:left-[-5rem]"
         ></div>
-
-        <Header />
-        {children}
+        <ActiveSectionContextProvider>
+          <Header />
+          {children}
+        </ActiveSectionContextProvider>
       </body>
     </html>
   );

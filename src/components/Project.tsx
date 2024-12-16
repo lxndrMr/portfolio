@@ -14,6 +14,7 @@ export default function Project({
     target: ref,
     offset: ["0 1", "1.33 1"],
   });
+
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
@@ -22,6 +23,7 @@ export default function Project({
       ref={ref}
       style={{ scale: scaleProgress, opacity: opacityProgress }}
       className="mb-3 sm:mb-8 last:mb-0 group"
+      id="projects"
     >
       <section
         className="sm:group-even:pl-8 bg-gray-100 max-w-[42rem] border border-black/5
