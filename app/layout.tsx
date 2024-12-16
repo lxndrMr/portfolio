@@ -23,8 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${geistMono.variable} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36
-          h-[5000rem]`}
+        className={`${geistMono.variable} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 `}
       >
         <div
           className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem]
