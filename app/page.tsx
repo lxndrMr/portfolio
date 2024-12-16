@@ -1,8 +1,17 @@
+"use client";
+
+import About from "@/src/components/About";
+import Intro from "@/src/components/Intro";
+import Projects from "@/src/components/Projects";
+import SectionDivider from "@/src/components/SectionDivider";
+
 export default function Page() {
   return (
-    <div>
-      <h1 className="font-geist">Bienvenue sur ma page!</h1>
-      <p>Ceci est un exemple de texte utilisant la police GeistMono.</p>
+    <div className="flex flex-col items-center justify-center px-4">
+      <Intro />
+      <SectionDivider />
+      <About />
+      <Projects />
     </div>
   );
 }
