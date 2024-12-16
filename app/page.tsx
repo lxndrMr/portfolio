@@ -1,6 +1,8 @@
 "use client";
 
 import About from "@/src/components/About";
+import Contact from "@/src/components/Contact";
+import Experience from "@/src/components/Experience";
 import Intro from "@/src/components/Intro";
 import Projects from "@/src/components/Projects";
 import SectionDivider from "@/src/components/SectionDivider";
@@ -14,6 +16,8 @@ export default function Page() {
       <About />
       <Projects />
       <Skills />
+      <Experience />
+      <Contact />
     </div>
   );
 }

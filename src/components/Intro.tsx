@@ -5,10 +5,12 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
+import { useActiveSectionContext } from "../context/active-section-context";
 import { useSectionInView } from "../lib/hooks";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
     <section
       ref={ref}
@@ -69,6 +71,10 @@ export default function Intro() {
           className="group bg-gray-950 text-white flex items-center gap-2 px-7 py-3 rounded-full
             outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105
             transition"
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
         >
           Contact me here{" "}
           <BsArrowRight className="opcity-70 group-hover:translate-x-1 transition" />
@@ -78,7 +84,7 @@ export default function Intro() {
           download
           className="group bg-white flex items-center gap-2 px-7 py-3 rounded-full outline-none
             focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer
-            border border-black/10"
+            borderBlack"
         >
           Download CV{" "}
           <HiDownload className="opacity-70 group-hover:translate-y-1 transition" />
@@ -88,7 +94,7 @@ export default function Intro() {
           target="_blank"
           className="bg-white text-gray-700 flex items-center gap-2 p-4 text-[1.2rem] rounded-full
             focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105
-            transition cursor-pointer border border-black/10"
+            transition cursor-pointer borderBlack"
         >
           <BsLinkedin />
         </a>
@@ -97,7 +103,7 @@ export default function Intro() {
           target="_blank"
           className="bg-white text-gray-700 flex items-center gap-2 p-4 text-[1.35rem] rounded-full
             focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105
-            transition cursor-pointer border border-black/10"
+            transition cursor-pointer borderBlack"
         >
           <FaGithubSquare />
         </a>
