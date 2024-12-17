@@ -15,3 +15,19 @@ export type ActiveSectionContextType = {
   timeOfLastClick: number;
   setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
 };
+
+export type ContactFormEmailProps = {
+  message: string;
+  email: string;
+};
+
+export type Theme = "light" | "dark";
+
+export type ThemeContextTypeProps = {
+  children: React.ReactNode;
+};
+
+export type ThemeContextType = {
+  theme: Theme;
+  toggleTheme: () => void;
+};

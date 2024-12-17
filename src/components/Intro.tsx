@@ -84,7 +84,7 @@ export default function Intro() {
           download
           className="group bg-white flex items-center gap-2 px-7 py-3 rounded-full outline-none
             focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer
-            borderBlack"
+            borderBlack dark:bg-white/10"
         >
           Download CV{" "}
           <HiDownload className="opacity-70 group-hover:translate-y-1 transition" />
@@ -94,7 +94,7 @@ export default function Intro() {
           target="_blank"
           className="bg-white text-gray-700 flex items-center gap-2 p-4 text-[1.2rem] rounded-full
             focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105
-            transition cursor-pointer borderBlack"
+            transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
         >
           <BsLinkedin />
         </a>
@@ -103,7 +103,7 @@ export default function Intro() {
           target="_blank"
           className="bg-white text-gray-700 flex items-center gap-2 p-4 text-[1.35rem] rounded-full
             focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105
-            transition cursor-pointer borderBlack"
+            transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
         >
           <FaGithubSquare />
         </a>
