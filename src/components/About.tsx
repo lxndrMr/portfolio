@@ -16,31 +16,34 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
+      <SectionHeading>À propos de moi</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
+        Après une carrière dans la{" "}
         <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
+          restauration d'une dizaine d'années{" "}
+        </span>{" "}
+        , je me dirige avec passion vers le secteur du développement web. Je me
+        suis inscrit à la Wild Code School pour me former{" "}
+        <span className="font-medium">au dévelopement web full-stack</span>.{" "}
+        <span className="italic">Ce que je j'adore dans la programmation</span>{" "}
+        , c'est son immensité : un problème peut avoir plusieurs solutions, ce
+        qui stimule la réflexion et la créativité. J'adore{" "}
+        <span className="underline">ressentir cette satisfaction</span> lorsque
+        je trouve enfin une solution à un problème complexe. Ma stack principale
+        comprend{" "}
+        <span className="font-medium">
+          React, Next.js, Node.js, et PostGreSQL
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        . Je suis également familier avec TypeScript et Prisma. je suis à la
+        recherche d’une opportunité pour effectuer mon alternance ou pour
+        intégrer un <span className="font-medium">poste de développeur</span> .
+        Mon objectif est de devenir un développeur compétent et polyvalent.
       </p>
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        <span className="italic">En dehors du code</span>, j'aime pratiquer
+        l'escalde, jouer aux échecs (même si je suis encore débutant !), et
+        jouer avec mon chat. J'aime{" "}
+        <span className="font-medium">apprendre de nouvelles choses</span>.
       </p>
     </motion.section>
   );

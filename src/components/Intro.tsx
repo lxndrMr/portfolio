@@ -1,4 +1,4 @@
-import portrait from "@/public/random-portrait.jpg";
+import portrait from "@/public/portrait.jpg";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -80,7 +80,7 @@ export default function Intro() {
           <BsArrowRight className="opcity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
-          href="/CV.pdf"
+          href="/CV-alexandre-moro.pdf"
           download
           className="group bg-white flex items-center gap-2 px-7 py-3 rounded-full outline-none
             focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer

@@ -34,10 +34,12 @@ export default function Skills() {
             whileInView="animate"
             viewport={{ once: true }}
             custom={index}
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="bg-white borderBlack text-4xl rounded-xl px-5 py-3 dark:bg-white/10
+              dark:text-white/80 sm:text-7xl"
             key={index}
+            style={{ color: skill.color }}
           >
-            {skill}
+            {skill.icon}
           </motion.li>
         ))}
       </ul>
