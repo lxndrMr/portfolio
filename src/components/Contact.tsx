@@ -20,13 +20,13 @@ export default function Contact() {
       transition={{ duration: 1 }}
       viewport={{ once: true }}
     >
-      <SectionHeading>Contact me</SectionHeading>
+      <SectionHeading>contactez moi</SectionHeading>
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
+        Vous pouvez me contacter directement à{" "}
         <a className="underline" href="mailto:alexandre.moro.24@gmail.com">
           alexandre.moro@gmail.com
         </a>{" "}
-        or throught this form.
+        ou via ce formulaire.
       </p>
       <form
         className="group mt-10 flex flex-col dark:text-black"
@@ -57,7 +57,9 @@ export default function Contact() {
           required
           maxLength={5000}
         ></textarea>
-        <SubmitButton />
+        <div className="flex justify-center">
+          <SubmitButton />
+        </div>
       </form>
     </motion.section>
   );

@@ -25,7 +25,7 @@ export default function Skills() {
       ref={ref}
       id="skills"
     >
-      <SectionHeading>My skills</SectionHeading>
+      <SectionHeading>Mes compétences</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
@@ -34,8 +34,8 @@ export default function Skills() {
             whileInView="animate"
             viewport={{ once: true }}
             custom={index}
-            className="bg-white borderBlack text-4xl rounded-xl px-5 py-3 dark:bg-white/10
-              dark:text-white/80 sm:text-7xl"
+            className="bg-white hover:bg-gray-100 borderBlack text-4xl rounded-xl px-5 py-3
+              dark:bg-white/10 dark:hover:bg-white/20 dark:text-white/80 sm:text-7xl"
             key={index}
             style={{ color: skill.color }}
           >

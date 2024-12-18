@@ -1,7 +1,9 @@
 import { ProjectProps } from "@/src/lib/types";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useRef } from "react";
+import { MdArrowOutward } from "react-icons/md";
 
 export default function Project({
   title,
@@ -63,6 +65,19 @@ export default function Project({
             group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3
             group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40"
         />
+        <div className="sm:group">
+          <Link
+            className="absolute top-5 right-5 sm:top-11 sm:right-10 text-gray-700 dark:text-white/70
+              sm:group-odd:left-72"
+            href="#home"
+          >
+            <MdArrowOutward
+              className="hover:translate-x-1 transition hover:rotate-45 focus:scale-110 hover:scale-110
+                active:scale-105 cursor-pointer"
+              size={20}
+            />
+          </Link>
+        </div>
       </section>
     </motion.div>
   );

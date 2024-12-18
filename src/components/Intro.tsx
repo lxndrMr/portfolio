@@ -9,7 +9,7 @@ import { useActiveSectionContext } from "../context/active-section-context";
 import { useSectionInView } from "../lib/hooks";
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView("Accueil", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
     <section
@@ -27,14 +27,14 @@ export default function Intro() {
             <Image
               src={portrait}
               alt="Alex portrait"
-              width="192"
-              height="192"
+              width="200"
+              height="200"
               quality="100"
               priority={true}
-              className="h-24 w-24 border-[0.35rem] border-white rounded-full object"
+              className="h-36 w-36 border-[0.35rem] border-white rounded-full object"
             />
           </motion.div>
-          <motion.span
+          {/* <motion.span
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -46,7 +46,7 @@ export default function Intro() {
             className="text-4xl absolute bottom-0 right-0"
           >
             👋
-          </motion.span>
+          </motion.span> */}
         </div>
       </div>
       <motion.h1
@@ -54,9 +54,9 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hi, I'm Alex.</span> I'm a{" "}
-        <span className="font-bold">full stack developer</span>, who loves to
-        <span className="italic"> build things</span> with
+        <span className="font-bold">Salut, je suis Alex</span> je suis un
+        développeur <span className="font-bold">full stack</span>, qui aime
+        <span className="italic"> créer des applications</span> avec
         <span className="underline"> React(Next.js).</span>
       </motion.h1>
       <motion.div
@@ -76,7 +76,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
+          Contactez moi{" "}
           <BsArrowRight className="opcity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
@@ -86,7 +86,7 @@ export default function Intro() {
             focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer
             borderBlack dark:bg-white/10"
         >
-          Download CV{" "}
+          Télécharger mon CV{" "}
           <HiDownload className="opacity-70 group-hover:translate-y-1 transition" />
         </a>
         <a

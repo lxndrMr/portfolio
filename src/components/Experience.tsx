@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import {
   VerticalTimeline,
@@ -14,7 +15,7 @@ export default function Experience() {
   const { theme } = useThemeContext();
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
-      <SectionHeading>My Experience</SectionHeading>
+      <SectionHeading>Mes expériences</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
@@ -34,11 +35,21 @@ export default function Experience() {
                     : "0.4rem solid  rgba(255,255,255,0.5)",
               }}
               date={item.date}
-              icon={item.icon}
+              icon={
+                <Image
+                  src={item.icon}
+                  alt="icon"
+                  style={{
+                    width: "75%",
+                    height: "auto",
+                    margin: "0.6rem auto",
+                  }}
+                />
+              }
               iconStyle={{
-                background:
-                  theme === "light" ? "white" : "rgba(255,255,255,0.15)",
+                background: theme === "light" ? "white" : "rgba(31, 41, 55)",
                 fontSize: "1.5rem",
+                border: `1px solid ${theme === "light" ? "#e5e7eb" : "#1a202c"}`,
               }}
             >
               <h3 className="text-2xl font-semibold capitalize">

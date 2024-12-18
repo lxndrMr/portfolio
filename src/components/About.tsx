@@ -5,7 +5,7 @@ import { useSectionInView } from "../lib/hooks";
 import SectionHeading from "./SectionHeading";
 
 export default function About() {
-  const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView("À propos");
 
   return (
     <motion.section
@@ -20,29 +20,29 @@ export default function About() {
       <p className="mb-3">
         Après une carrière dans la{" "}
         <span className="font-medium">
-          restauration d'une dizaine d'années{" "}
+          restauration d'une dizaine d'années,{" "}
         </span>{" "}
-        , je me dirige avec passion vers le secteur du développement web. Je me
+        je me dirige avec passion vers le secteur du développement web. Je me
         suis inscrit à la Wild Code School pour me former{" "}
         <span className="font-medium">au dévelopement web full-stack</span>.{" "}
-        <span className="italic">Ce que je j'adore dans la programmation</span>{" "}
-        , c'est son immensité : un problème peut avoir plusieurs solutions, ce
-        qui stimule la réflexion et la créativité. J'adore{" "}
+        <span className="italic">Ce que j'adore dans la programmation</span>,
+        c'est son immensité : un problème peut avoir plusieurs solutions, ce qui
+        stimule la réflexion et la créativité. J'adore{" "}
         <span className="underline">ressentir cette satisfaction</span> lorsque
         je trouve enfin une solution à un problème complexe. Ma stack principale
         comprend{" "}
         <span className="font-medium">
           React, Next.js, Node.js, et PostGreSQL
         </span>
-        . Je suis également familier avec TypeScript et Prisma. je suis à la
+        . Je suis également familier avec TypeScript et Prisma. Je suis à la
         recherche d’une opportunité pour effectuer mon alternance ou pour
-        intégrer un <span className="font-medium">poste de développeur</span> .
+        intégrer un <span className="font-medium">poste de développeur</span>.
         Mon objectif est de devenir un développeur compétent et polyvalent.
       </p>
       <p>
         <span className="italic">En dehors du code</span>, j'aime pratiquer
-        l'escalde, jouer aux échecs (même si je suis encore débutant !), et
-        jouer avec mon chat. J'aime{" "}
+        l'escalade, jouer aux échecs (même si je suis encore débutant !), la
+        cuisine, mes amis et jouer avec mon chat. J'aime{" "}
         <span className="font-medium">apprendre de nouvelles choses</span>.
       </p>
     </motion.section>

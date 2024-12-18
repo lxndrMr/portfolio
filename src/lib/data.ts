@@ -1,10 +1,10 @@
 import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
+import wild from "@/public/lwcs.svg";
+import nebula from "@/public/nebula.jpg";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import React from "react";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { FaCss3Alt, FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import {
   SiExpress,
   SiFramer,
@@ -17,23 +17,23 @@ import {
 
 export const links = [
   {
-    name: "Home",
+    name: "Accueil",
     hash: "#home",
   },
   {
-    name: "About",
+    name: "À propos",
     hash: "#about",
   },
   {
-    name: "Projects",
+    name: "Projets",
     hash: "#projects",
   },
   {
-    name: "Skills",
+    name: "Compétences",
     hash: "#skills",
   },
   {
-    name: "Experience",
+    name: "Experiences",
     hash: "#experience",
   },
   {
@@ -48,7 +48,7 @@ export const experiencesData = [
     location: "Bordeaux, FR",
     description:
       "J'ai obtenu mon diplôme DWWM, RNCP niveau 5 après 5 mois d'études.",
-    icon: React.createElement(LuGraduationCap),
+    icon: wild,
     date: "2024",
   },
 ] as const;
@@ -66,7 +66,7 @@ export const projectsData = [
     description: `Projet réalisé en équipe, est une application de voyage
 interstellaire autour du jeu “Star Citizen”`,
     tags: ["React", "SCSS"],
-    imageUrl: rmtdevImg,
+    imageUrl: nebula,
   },
   {
     title: "Externatic",
@@ -75,13 +75,10 @@ interstellaire autour du jeu “Star Citizen”`,
     tags: ["React", "Node.js", " Express.js", "MySQL", "Tailwind"],
     imageUrl: wordanalyticsImg,
   },
-] as const;
-
-export const testsData = [
   {
     title: "Rocks-Paper-Scissors",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "Application interactive de jeu Pierre-Papier-Ciseaux développée dans le cadre d'une évaluation technique.",
     tags: ["React", "Next.js", "Tailwind", "Shadcn"],
     imageUrl: corpcommentImg,
   },
