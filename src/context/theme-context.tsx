@@ -24,7 +24,6 @@ export default function ThemeContextProvider({
 
   useEffect(() => {
     const localTheme = window.localStorage.getItem("theme") as Theme | null;
-    console.log("Local theme from storage:", localTheme);
 
     if (localTheme) {
       setTheme(localTheme);

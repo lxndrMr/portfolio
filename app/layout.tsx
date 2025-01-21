@@ -14,9 +14,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Alex | Personal Portfolio",
+  title: "Alex | Portfolio Personnel",
   description:
-    "Alex is a full stack developer, who loves to build things with React.",
+    "Alex est un développeur full stack, qui aime construire des choses avec React.",
 };
 
 export default function RootLayout({
@@ -25,26 +25,26 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="!scroll-smooth">
+    <html lang="fr" className="!scroll-smooth">
       <body
-        className={`${geistMono.variable} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36
-          dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
+        className={`${geistMono.variable} font-geist bg-[#faf6f1] text-[#2c2c2c] relative pt-28
+          sm:pt-36 dark:bg-[#2A2A38] dark:text-[#eaeaea] dark:text-opacity-90`}
       >
         <div
-          className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem]
-            rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"
+          className="bg-[#ffb0a5] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem]
+            rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#f48fb1]"
         ></div>
         <div
-          className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem]
+          className="bg-[#a1c6eb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem]
             rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem]
-            xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"
+            xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#80e27e]"
         ></div>
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
             <Header />
             {children}
             <Footer />
-            <Toaster position="top-right" />
+            <Toaster position="bottom-center" />
             <ThemeSwitch />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>

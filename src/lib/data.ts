@@ -1,7 +1,8 @@
-import corpcommentImg from "@/public/corpcomment.png";
+import eat from "@/public/eat.png";
+import externatic from "@/public/externatic.png";
 import wild from "@/public/lwcs.svg";
 import nebula from "@/public/nebula.jpg";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import rocks from "@/public/rocks.png";
 import React from "react";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { FaCss3Alt, FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa";
@@ -59,7 +60,7 @@ export const projectsData = [
     description:
       "Projet réalisé en équipe, est une application web qui référence les restaurants autour du Campus WCS.",
     tags: ["HTML", "CSS", "JavaScript"],
-    imageUrl: corpcommentImg,
+    imageUrl: eat,
   },
   {
     title: "Nebula",
@@ -73,14 +74,14 @@ interstellaire autour du jeu “Star Citizen”`,
     description:
       "Projet réalisé en équipe, est une application web de recrutement spécialisé dans les métiers de l'informatique et du digital.",
     tags: ["React", "Node.js", " Express.js", "MySQL", "Tailwind"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: externatic,
   },
   {
     title: "Rocks-Paper-Scissors",
     description:
       "Application interactive de jeu Pierre-Papier-Ciseaux développée dans le cadre d'une évaluation technique.",
-    tags: ["React", "Next.js", "Tailwind", "Shadcn"],
-    imageUrl: corpcommentImg,
+    tags: ["React", "Next.js", "Tailwind", "Shadcn", "PostGres"],
+    imageUrl: rocks,
   },
 ] as const;
 

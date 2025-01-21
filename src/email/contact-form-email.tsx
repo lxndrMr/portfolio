@@ -19,17 +19,17 @@ export default function ContactFormEmail({
   return (
     <Html>
       <Head></Head>
-      <Preview>New message from your portfolio site</Preview>
+      <Preview>Nouveau message de votre site portfolio</Preview>
       <Tailwind>
         <Body className="bg-gray-100 text-black">
           <Container>
             <Section className="bg-white borderBlack my-10 px-10 py-4 rounded-md">
               <Heading className="leading-tight">
-                You received the following message from the contact form
+                Vous avez reçu le message suivant du formulaire de contact
               </Heading>
               <Text>{message}</Text>
               <Hr />
-              <Text>The sender's email address is: {email}</Text>
+              <Text>L'adresse e-mail de l'expéditeur est : {email}</Text>
             </Section>
           </Container>
         </Body>

@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
+import toast from "react-hot-toast";
 import { MdArrowOutward } from "react-icons/md";
 
 export default function Project({
@@ -69,7 +70,16 @@ export default function Project({
           <Link
             className="absolute top-5 right-5 sm:top-11 sm:right-10 text-gray-700 dark:text-white/70
               sm:group-odd:left-72"
-            href="#home"
+            href="#projects"
+            onClick={(e) => {
+              e.preventDefault();
+              toast("Refonte en cours", {
+                style: {
+                  background: "#4CAF50",
+                  color: "#fff",
+                },
+              });
+            }}
           >
             <MdArrowOutward
               className="hover:translate-x-1 transition hover:rotate-45 focus:scale-110 hover:scale-110

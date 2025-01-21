@@ -31,10 +31,10 @@ export default function Contact() {
       <form
         className="group mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
-          const { error, data } = await sendEmail(formData);
+          const result = await sendEmail(formData);
 
-          if (error) {
-            toast.error(error);
+          if (result?.error) {
+            toast.error(result.error);
             return;
           }
           toast.success("Message sent successfully");
