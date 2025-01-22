@@ -21,7 +21,7 @@ export default function Skills() {
   const { ref } = useSectionInView("Compétences");
   return (
     <section
-      className="mb-28 max-w-[53rem] text-center sm:mb-40 scroll-mt-28"
+      className="mb-28 max-w-[53rem] text-center sm:mb-40 scroll-mt-28 relative"
       ref={ref}
       id="skills"
     >
