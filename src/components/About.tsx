@@ -26,11 +26,9 @@ export default function About() {
         suis inscrit à la Wild Code School pour me former{" "}
         <span className="font-medium">au dévelopement web full-stack</span>.{" "}
         <span className="italic">Ce que j'adore dans la programmation</span>,
-        c'est son immensité : un problème peut avoir plusieurs solutions, ce qui
-        stimule la réflexion et la créativité. J'adore{" "}
+        c'est son immensité. J'adore{" "}
         <span className="underline">ressentir cette satisfaction</span> lorsque
-        je trouve enfin une solution à un problème complexe. Ma stack principale
-        comprend{" "}
+        je trouve enfin une solution à un problème. Ma stack principale comprend{" "}
         <span className="font-medium">
           React, Next.js, Node.js, et PostGreSQL
         </span>
@@ -42,7 +40,7 @@ export default function About() {
       <p>
         <span className="italic">En dehors du code</span>, j'aime pratiquer
         l'escalade, jouer aux échecs (même si je suis encore débutant !), la
-        cuisine, mes amis et jouer avec mon chat. J'aime{" "}
+        cuisine. J'aime{" "}
         <span className="font-medium">apprendre de nouvelles choses</span>.
       </p>
     </motion.section>
